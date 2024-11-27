@@ -11,7 +11,7 @@ import rightGradient from "../../assets/images/hero/rightgr.png";
 function Hero() {
   return (
     <div
-      className={` border border-red-500 w-full bg-cover relative mb-16  md:h-[100vh]`}
+      className={` w-full bg-cover relative mb-16  md:h-[100vh]`}
       style={{ backgroundImage: `url(${bgCircle})` }}
     >
       <Container>
