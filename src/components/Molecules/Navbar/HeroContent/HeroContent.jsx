@@ -9,11 +9,11 @@ function HeroContent({
     buttons = [], 
   }) {
     return (
-      <div className=" w-[100%] md:w-[960px]  md:h-[277px] ">
-         <Heading variant="h1" textMode="light" className="hidden md:block">
+      <div className="  w-[100%] md:w-[960px]  md:h-[277px] mb-10 ">
+         <Heading variant="h1" textMode="light" className="hidden lg:block">
           {headingText}
         </Heading>
-        <Heading variant="h2" textMode="light" className="block md:hidden">
+        <Heading variant="h2" textMode="light" className="block lg:hidden">
           {headingText}
         </Heading>
         <div className='mt-4'>

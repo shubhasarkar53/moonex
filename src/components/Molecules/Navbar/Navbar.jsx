@@ -7,11 +7,6 @@ import { FooterIcon } from "../Footer/Contact";
 import Menue from "../../Atoms/Icons/Menue";
 import Close from "../../Atoms/Icons/Close";
 
-
-
-
-
-
 function Navbar({ menuItems = ["Home"], btnText = "Connect Wallet" }) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -29,10 +24,16 @@ function Navbar({ menuItems = ["Home"], btnText = "Connect Wallet" }) {
         })}
       </div>
       {/* mobile */}
-     
+
       <button className=" md:hidden " onClick={toggleMobileMenu}>
         <FooterIcon
-          icon={isMobileMenuOpen ? <Close className="text-gold-400" /> : <Menue className="text-gold-400" />}
+          icon={
+            isMobileMenuOpen ? (
+              <Close className="text-gold-400" />
+            ) : (
+              <Menue className="text-gold-400" />
+            )
+          }
         />
       </button>
 
@@ -46,11 +47,14 @@ function Navbar({ menuItems = ["Home"], btnText = "Connect Wallet" }) {
           <NavItem key={index}>{item}</NavItem>
         ))}
         <Button>{btnText}</Button>
+        <button className=" md:hidden " onClick={toggleMobileMenu}>
+          <FooterIcon icon={<Close className="text-gold-400" />} />
+        </button>
       </div>
-     
+
       {/* btn */}
       <div className="hidden md:flex">
-      <Button>{btnText}</Button>
+        <Button>{btnText}</Button>
       </div>
     </nav>
   );

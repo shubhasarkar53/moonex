@@ -30,12 +30,12 @@ function Hero() {
         </div>
         {/* Absolute Images */}
         <img
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 pointer-events-none "
+          className="absolute right-0 top-[45%] lg:top-1/2 transform -translate-y-1/2 pointer-events-none  "
           src={moon}
           alt="moon"
         />
         <img
-          className="absolute right-36 bottom-0 transform -translate-y-1/2 pointer-events-none  "
+          className="absolute right-10 lg:right-36 bottom-0 transform -translate-y-1/2 pointer-events-none  "
           src={star}
           alt="star"
         />
