@@ -9,7 +9,7 @@ function HeroContent({
     buttons = [], 
   }) {
     return (
-      <div className="  w-[100%] md:w-[960px]  md:h-[277px] mb-10 ">
+      <div className="w-[100%] lg:w-[960px]  lg:h-[277px] mb-10 ">
          <Heading variant="h1" textMode="light" className="hidden lg:block">
           {headingText}
         </Heading>

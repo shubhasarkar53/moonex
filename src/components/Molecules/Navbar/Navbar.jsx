@@ -53,7 +53,7 @@ function Navbar({ menuItems = ["Home"], btnText = "Connect Wallet" }) {
       </div>
 
       {/* btn */}
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         <Button>{btnText}</Button>
       </div>
     </nav>
