@@ -4,8 +4,8 @@ import Table from "../Molecules/Table/Table";
 
 function About() {
   return (
-    <div>
-      <div className="pb-10">
+    <div >
+      <div className="pb-10 ">
       <Heading  textMode="light">
         Why <span className="text-gold-500">Moonex</span> ?
       </Heading>
